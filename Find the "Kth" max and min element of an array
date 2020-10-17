@@ -1,0 +1,10 @@
+using System;
+
+public class GFG{
+	static public void Main (){
+		int[] arr = {23,76,89,45,34,24};
+		int k = 3;
+		Array.Sort(arr);
+		Console.WriteLine(arr[k-1]);
+	}
+}
