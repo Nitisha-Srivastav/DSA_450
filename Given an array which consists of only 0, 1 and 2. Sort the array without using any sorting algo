@@ -1,0 +1,49 @@
+using System;
+
+public class GFG{
+	static public void Main (){
+		int[] arr = {2,2,1,1,0,0,1,2,0};
+		
+		int i,c0=0,c1=0,c2=0;
+		for(i=0;i<arr.Length;i++)
+		{
+		    switch(arr[i])
+		    {
+		        case 0: 
+		                c0++;
+		                break;
+		        case 1: 
+		                c1++;
+		                break;
+		        case 2: 
+		                c2++;
+		                break;
+		    }
+		}
+		    int j =0;
+		    while(c0>0)
+		    {
+		        arr[j]=0;
+		        c0--;
+		        j++;
+		    }
+		    
+		    while(c1>0)
+		    {
+		        arr[j]=1;
+		        c1--;
+		        j++;
+		    }
+		    while(c2>0)
+		    {
+		        arr[j]=2;
+		        c2--;
+		        j++;
+		    }
+		    foreach(int elements in arr)
+		    {
+		        Console.WriteLine(elements+" ");
+		    }
+		
+	}
+}
