@@ -1,0 +1,35 @@
+using System;
+
+public class GFG{
+	static public void Main (){
+		int[] ar1 = {3,6,7,8};
+		int[] ar2 ={1,5,9};
+		int len1= ar1.Length;
+		int len2 = ar2.Length;
+		for(int i = 0; i<len1;i++)
+		{
+		    for(int j =0 ;j<len2;j++)
+		    {
+		        if(ar1[i]>ar2[j])
+		        {
+		            int temp = ar1[i];
+		            ar1[i]= ar2[j];
+		            ar2[j] = temp;
+		        }
+		    }
+		}
+		
+		foreach(int elements in ar1)
+		{
+		    Console.WriteLine(elements);
+		}
+		Console.WriteLine();
+		
+		foreach(int elements in ar2)
+		{
+		    Console.WriteLine(elements);
+		}
+		
+		
+	}
+}
